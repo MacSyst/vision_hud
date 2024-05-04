@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(41, 41, 41);
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.info-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.server-title {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: rgb(153, 17, 17);
+    text-shadow: rgb(110, 1, 1) 0px 0px 10px;
+}
+
+.divider {
+    display: inline-block;
+    background-color: rgb(156, 0, 0);
+    width: 4px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: rgb(133, 0, 0) 0px 0px 10px;
+    height: 95px;
+}
+
+.info-icon {
+    margin-right: 14px;
+}
+
+.player-info-container {
+    font-size: 15px;
+    display: flex;
+}
+
+.player-id-container {
+    display: flex;
+    color: rgb(180, 180, 180);
+}
+
+.player-count-container {
+    display: flex;
+    margin-right: 50px;
+    color: rgb(180, 180, 180);
+}
+
+.server-logo {
+    display: flex;
+    align-items: center;
+}
+
+.server-logo img {
+    height: 80px;
+    margin-left: 10px;
+}
+
+.player-count {
+    text-shadow: white 0px 0px 10px;
+    color: rgb(209, 209, 209);
+}
+
+.player-id {
+    text-shadow: white 0px 0px 10px;
+    color: rgb(209, 209, 209);
+}
