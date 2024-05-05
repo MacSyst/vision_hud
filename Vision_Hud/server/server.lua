@@ -1,13 +1,20 @@
+local players = 0
 ESX = exports["es_extended"]:getSharedObject()
 
+AddEventHandler('esx:playerLoaded', function(source)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    if xPlayer then
+        players = players + 1
+    end
+end)
+
+AddEventHandler('esx:playerDropped', function(source)
+    players = players - 1
+end)
+
+
 function ShowPlayers()
-	local xPlayers = ESX.GetPlayers()
-	PlayersOnline = 0
-	for i=1, #xPlayers, 1 do
-		local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
-        PlayersOnline = PlayersOnline + 1
-	end
-    TriggerClientEvent('vision_hud:setPlayers', -1, PlayersOnline)
+    TriggerClientEvent('vision_hud:setPlayers', -1, players)
     SetTimeout(5000, ShowPlayers)
 end
 
