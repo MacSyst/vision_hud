@@ -1,7 +1,3 @@
-ESX = nil
-
-ESX = exports["es_extended"]:getSharedObject()
-
 local OnlinePlayers = 0
 
 RegisterNetEvent("vision_hud:setPlayers")
