@@ -1,4 +1,4 @@
-ESX = exports["es_extended"]:getSharedObject()
+SetConvarServerInfo('tags', 'Vision-Scripts')
 
 function ShowPlayers()
 	local xPlayers = ESX.GetPlayers()
